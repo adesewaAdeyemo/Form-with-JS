@@ -1,0 +1,61 @@
+<div class="container" id="dyna">
+    <div class="card col-5 p-3">
+        <div class="card-body">
+        <div class="d-flex justify-content-between align-bottom">
+            <h3 class="card-title mb-4">Your Information</h3>
+            <span type='submit' onclick="dynamicactive(-1)">Previous</span>
+        </div>
+            <p class="card-text mb-3">Kindly fill out the fields with your information as a voucher</p>
+
+            <form id='form'>
+                <div class="input-field my-3">
+                    <label for="name">Name</label>
+                    <input id='name' class="form-control form-control-md" type="text" placeholder="Enter a name" aria-label="Name" name="name" onmouseout="validate(event, 'name')">
+                    <span role="alert" id="nameError" class='error' aria-hidden="true">
+                        Name cannot be empty
+                    </span>
+                </div>
+
+                <div class="input-field my-3">
+                    <label for="gender">Gender</label>
+                    <select id='gender' type="select" class="form-control form-control-md form-select" id="gender" aria-label="gender" name="gender">
+                        <option selected>Select a gender</option>
+                        <option value="F">Female</option>
+                        <option value="M">Male</option>
+                    </select>
+                </div>
+
+                <div class="input-field my-3">
+                    <label for="country">Nationality</label>
+                    <select class="selectpicker form-control form-control-md form-select" data-dropup-auto="false" data-live-search="true" id="countrySelect" value=""></select>
+                </div>
+
+                <div class="input-field my-3">
+                    <label for="date">Date of Birth</label>
+                    <input id='dob' class="form-control form-control-md" type="datetime" placeholder="DD/MM/YY" aria-label="dob" name="dob"  onmouseout="validate(event, 'dob')">
+                    <span role="alert" id="dobError" class='error' aria-hidden="true">
+                        DOB cannot be empty
+                    </span>
+                </div>
+                
+                <div class="input-field my-3">
+                    <label for="gender">Relationship with individual</label>
+                    <select class="form-control form-control-md form-select" id="relationship" aria-label="relationship" name="relationship">
+                        <option selected>Select the relationship type</option>
+                        <option value="spouse">Spouse</option>
+                        <option value="parent">Parent</option>
+                        <option value="child">Child</option>
+                        <option value="sibling">Sibling</option>
+                        <option value="friend">Friend</option>
+                        <option value="colleague">Colleague</option>
+                        <option value="relative">Relative</option>
+                        <option value="partner">Partner</option>
+                    </select>
+                </div>
+            </form>
+            <button type="submit" form='form' class="btn btn-lg btn-dark btn-block col-12 mt-5" onclick="saveData(event, 3, 'voucher')">
+                Next
+            </button>
+        </div>
+    </div>
+</div>

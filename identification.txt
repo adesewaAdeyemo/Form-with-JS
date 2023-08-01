@@ -1,0 +1,13 @@
+<div class="container" id="dyna">
+    <div class="card col-5 p-3" >
+        <div class="card-body">
+            <h3 class="card-title mb-4">Identification Request</h3>
+            <p class="card-text mb-5">Hello, You have been  normalised to identify someone. Tap "Next" to continue with the identification process</p>
+            <button type="submit" id="forma" class="btn btn-lg btn-dark btn-block col-12 mt-5" onclick="dynamicactive(1)">
+                Next
+            </button>
+            
+        </div>
+    </div>
+</div>
+

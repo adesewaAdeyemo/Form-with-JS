@@ -1,0 +1,28 @@
+<div class="container" id="dyna">
+    <div class="card col-4 pb-5 px-3">
+        <div class="card-body">
+            <div class="col-12 close-button" style="text-align: right; font-size: 20px;">
+                <span class="submit" onclick="dynamicactive(0)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>           
+                </span>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="sa col-2">
+                <div class="sa-success ">
+                <div class="sa-success-tip"></div>
+                <div class="sa-success-long"></div>
+                <div class="sa-success-placeholder"></div>
+                <div class="sa-success-fix"></div>
+                </div>
+                </div>
+            </div>
+            <center>
+                <h4>Form Submitted!</h4>
+                <p>Thank you for vouching an identity</p>
+            </center>
+        </div>
+    </div>
+</div>
